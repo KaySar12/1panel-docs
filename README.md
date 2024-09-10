@@ -1,23 +1,37 @@
-This repository stores the official documentation of the 1Panel project , which is built using the Material for MkDocs theme under the MkDocs documentation framework.
+This warehouse preserves [1panel project] (https://github.com/1panel-dev/1panel) [official document] (https://1panel.cn/docs/)).//github.com/mkdocs/mkdocs) The theme of [Material for mkdocs] (https://github.com/squidfunk/mkdocs-amaterial) under the document framework.
 
-Local Development
-Clone this repository
-git clone https://github.com/1Panel-dev/docs.git
-Install Dependencies
-cd docs
-pip install -r requirements/requirements.txt
-Modify document content
-The document structure of this document is defined in mkdocs.ymlthe file, and the specific contents of the document are in docsthe directory.
+## Local development
 
-The document content is written in markdown syntax. If you want to add a new document, you need to first add the corresponding chapter navigation in the part mkdocs.ymlof the file .nav
+### clone warehouse
+`` `Bash
+git clone https://github.com/1panel-dev/docs.git
+`` `
 
-Local debugging documentation
-mkdocs serve
-After executing the above command, you can http://127.0.0.1:8000view the generated document content through the address. When the document is modified, the page content will be automatically updated.
+### Installation dependencies
+`` `Bash
+CD DOCS
+PIP Install -R Requirements/Requirements.txt
+`` `
 
-Building Documentation
+### Modify the document content
+
+The document structure of this document is defined in the `mkdocs.yml` file, and the specific content of the document is in the` docs` directory.
+
+The content of the document is written in Markdown syntax. If you want to add a new document, you need to add the corresponding chapter navigation in the `nav` in the` mkdocs.yml` file.
+
+### Local debug document
+`` `Bash
+mkdocs server
+`` `
+After executing the above commands, you can view the generated document content through the address of `http://127.0.0.0.0.1: 8000`. When the document is modified, the page content will be updated automatically.
+
+### Construction document
+`` `Bash
 mkdocs build
-After executing the above command, sitestatic files of the document site will be generated in the directory. Copy the contents in the directory to any HTTP server to complete the deployment of the document.
+`` `
 
-Question Feedback
-If you find errors in the documentation or have questions about the content, please submit a GitHub Issue to the main repository of the 1Panel project.
+After executing the above commands, the static file of the document site will be generated in the `site` directory, and the content of the document can be completed on any HTTP server to complete the deployment of the document.
+
+### feedback
+
+If you find an error in the document, or have any questions about the content of the document, submit github issues to the [1panel project's main warehouse] (https://github.com/1panel-dev/1panel/issues))
