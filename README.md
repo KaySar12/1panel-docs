@@ -1,4 +1,4 @@
-This warehouse preserves [1panel project] (https://github.com/1panel-dev/1panel) [official document] (https://1panel.cn/docs/)).//github.com/mkdocs/mkdocs) The theme of [Material for mkdocs] (https://github.com/squidfunk/mkdocs-amaterial) under the document framework.
+
 
 ## Local development
 
