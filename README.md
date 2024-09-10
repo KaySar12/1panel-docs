@@ -4,13 +4,13 @@
 
 ### clone warehouse
 ```bash
-git clone https://github.com/1panel-dev/docs.git
+git clone https://github.com/KaySar12/1panel-docs.git
 ```
 
 ### Installation dependencies
 ```bash
 CD DOCS
-PIP Install -R Requirements/Requirements.txt
+pip install -R Requirements/requirement.txt
 ```
 
 ### Modify the document content
