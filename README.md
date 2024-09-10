@@ -1,37 +1,23 @@
-本仓库保存了 [1Panel 项目](https://github.com/1Panel-dev/1Panel) 的 [官方文档](https://1panel.cn/docs/)，该文档使用 [MkDocs](https://github.com/mkdocs/mkdocs) 文档框架下的 [Material for MkDocs](https://github.com/squidfunk/mkdocs-material) 主题进行构建。
+This repository stores the official documentation of the 1Panel project , which is built using the Material for MkDocs theme under the MkDocs documentation framework.
 
-## 本地开发
-
-### 克隆本仓库
-```bash
+Local Development
+Clone this repository
 git clone https://github.com/1Panel-dev/docs.git
-```
-
-### 安装依赖
-```bash
+Install Dependencies
 cd docs
 pip install -r requirements/requirements.txt
-```
+Modify document content
+The document structure of this document is defined in mkdocs.ymlthe file, and the specific contents of the document are in docsthe directory.
 
-### 修改文档内容
+The document content is written in markdown syntax. If you want to add a new document, you need to first add the corresponding chapter navigation in the part mkdocs.ymlof the file .nav
 
-本文档的文档结构定义在 `mkdocs.yml` 文件中，文档的具体内容均在 `docs` 目录中。
-
-文档内容使用 markdown 语法编写，若要添加新的文档，需要先在 `mkdocs.yml` 文件中的 `nav` 部分增加对应章节导航。
-
-### 本地调试文档
-```bash
+Local debugging documentation
 mkdocs serve
-```
-执行上述命令后，可通过 `http://127.0.0.1:8000` 地址查看生成的文档内容，当修改文档后，页面内容会自动更新。
+After executing the above command, you can http://127.0.0.1:8000view the generated document content through the address. When the document is modified, the page content will be automatically updated.
 
-### 构建文档
-```bash
+Building Documentation
 mkdocs build
-```
+After executing the above command, sitestatic files of the document site will be generated in the directory. Copy the contents in the directory to any HTTP server to complete the deployment of the document.
 
-执行上述命令后，会在 `site` 目录下生成文档站点的静态文件，将目录中的内容复制到任意 HTTP 服务器上即可完成文档的部署。
-
-## 问题反馈
-
-如果您发现文档中存在错误，或对文档内容存在疑问，请提交 GitHub Issue 到 [1Panel 项目的主仓库](https://github.com/1Panel-dev/1Panel/issues)
+Question Feedback
+If you find errors in the documentation or have questions about the content, please submit a GitHub Issue to the main repository of the 1Panel project.
